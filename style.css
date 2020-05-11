@@ -1,0 +1,40 @@
+:root {
+    --gw-blue:  #033C5A;
+    --gw-light-blue: #f0faff;
+    --gw-gold: #AA9868;
+}
+
+.bg-navbar{
+    background-color: var(--gw-blue);
+}
+
+.starter{
+    padding-top: 4rem;
+  text-align: center;
+}
+
+.content{
+    margin-top: 2rem;
+    padding-top: .5rem;
+    padding-bottom: 1rem;
+    border-left-style: double;
+    border-top-style: dotted;
+    border-radius: 5px;
+    border-color: var(--gw-blue);
+    border-width: medium;
+    border-width: 3px 10px;
+    background-color: var(--gw-light-blue);
+}
+
+.content h2{
+    
+}
+
+
+.navbar-brand .nav-link a{
+    color: white;
+    link: white;
+    visited:white;
+    hover: var(--gw-gold);
+}
+
