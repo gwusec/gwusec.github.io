@@ -24,6 +24,7 @@
     border-width: medium;
     border-width: 3px 10px;
     background-color: var(--gw-light-blue);
+    max-width:1000px;
 }
 
 .content h2{
