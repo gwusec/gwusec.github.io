@@ -27,9 +27,15 @@
 }
 
 .content h2{
-    
+    padding-bottom: 1rem;
 }
 
+.external-lab{
+   margin-top: 2rem;
+    padding-top: .5rem;
+    padding-bottom: 1rem;
+ 
+}
 
 .navbar-brand .nav-link a{
     color: white;
@@ -38,3 +44,15 @@
     hover: var(--gw-gold);
 }
 
+.img-thubmnail{
+    object-fit: cover;
+    width:200px;
+    height:200px;
+}
+
+.publications li{
+    margin-top: 1rem;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    
+}
