@@ -6,7 +6,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" type="image/png" href="imgs/icon.png">
     <title>GWUSEC</title>
@@ -14,36 +17,39 @@
 
 <body>
   <nav class="navbar navbar-expand-sm navbar-dark bg-navbar fixed-top">
-    <a class="navbar-brand" href="#home"> <img src="imgs/icon.png" alt="GWU/USEC Lab logo" width="35" class="align-right"> GWU/USEC Lab</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#people">People</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#activities">Activities</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#join">Join the lab!</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#values">Values Statement</a>
-        </li>
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#home"> <img src="imgs/icon.png" alt="GWU/USEC Lab logo" width="35" class="align-center me-2"> GWU/USEC Lab</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#people">People</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#activities">Activities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#join">Join the lab!</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#values">Values Statement</a>
+          </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="#pubs">Publications</a>
-        </li>
-      </ul>
+          <li class="nav-item">
+            <a class="nav-link" href="#pubs">Publications</a>
+          </li>
+        </ul>
+      </div>
     </div>
+
   </nav>
   <main class="flex-shrink-0">
     <a id="home"></a>
     <div class="container starter">
-      <img src="imgs/banner.png" alt="GWU/USEC Lab banner" height="250" class="img-fluid">
-      <div class="row mt-4">
+      <img src="imgs/banner.png" alt="GWU/USEC Lab banner" class="img-fluid" style="max-width:80%">
+      <div class="row mt-3">
         <div class="col-sm">
           <a href="https://twitter.com/gwusec">
             <img src="imgs/icons/twitter.svg" alt="Twitter icon"><br>
@@ -66,9 +72,54 @@
     <div class="container-fluid main">
       <div class="container about content">
         <h2>GWUSEC Lab</h2>
-        <center>
-          <img src="imgs/GWUSEC_group_photo_2021.jpeg" class="img-fluid" style="max-width:80%" alt="GWUSEC Lab Group Photo August 2021">
-        </center>
+
+        
+        <div class="container" style="max-width:80%">
+
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              
+            </div>
+            
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="imgs/GWUSEC_group_photo_2021.jpeg" class="d-block w-100" alt="GWUSEC Lab Group Photo August 2021">
+              </div>
+              <div class="carousel-item">
+                <img src="imgs/GWSUEC_USENIX_group_photo_2022.jpg" class="d-block w-100" alt="GWUSEC Lab Group at USENIX  Security,  August 2022">
+              </div>
+              <div class="carousel-item">
+                <img src="imgs/GWUSEC_USENIX_david_pres_2022.jpg" class="d-block w-100" alt="David Balash presenting at USENIX Security, August 2022">
+              </div>
+              <div class="carousel-item">
+                <img src="imgs/GWUSEC_USENIX_peter_pres_2022.jpg" class="d-block w-100" alt="Peter Mayer presenting at  USENIX Security, August 2022">
+              </div>
+              <div class="carousel-item">
+                <img src="imgs/GWUSEC_USENIX_collins_pres_2022.jpg" class="d-block w-100" alt="Collins Munyendo presenting at USENIX Security, August 2022">
+              </div>
+              <div class="carousel-item">
+                <img src="imgs/GWUSEC_USENIX_final_pic_2022.jpg" class="d-block w-100" alt="GWUSEC Final Photo From USENIX August Security, 2022">
+              </div>
+
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span cGWUSElass="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        
+
 
         <p>
           We are the George Washington University/Usable Security and Privacy Lab (GWUSEC).
@@ -81,54 +132,54 @@
         <div class="container news">
           <h4>News</h4>
           <ul>
-            <li><span class="badge badge-secondary">May 2022</span> Peter Mayer, Collins W. Munyendo, Michelle L. Mazurek, and Adam J. Aviv have a new paper accepted at USENIX Security'22 (Sec'22).</li>
+            <li><span class="badge bg-secondary">May 2022</span> Peter Mayer, Collins W. Munyendo, Michelle L. Mazurek, and Adam J. Aviv have a new paper accepted at USENIX Security'22 (Sec'22).</li>
 
-            <li><span class="badge badge-secondary">Apr 2022</span> Collins W. Munyendo, Yasemin Acar, and Adam J. Aviv have a new paper accepted at IEEE S&P'22 (Oakland'22).</li>
-            <li><span class="badge badge-secondary">Apr 2022</span> Jan Jancar, Marcel Fourné, Daniel De Almeida Braga, Mohamed Sabt, Peter Schwabe, Gilles Barthe, Pierre-Alain Fouque, and Yasemin Acar have a new paper accepted at IEEE S&P'22 (Oakland'22).</li>
-            <li><span class="badge badge-secondary">Apr 2022</span> Dominik Wermke, Noah Wöhler, Jan H. Klemmer, Marcel Fourné, Yasemin Acar and Sascha Fahl have a new paper accepted at IEEE S&P'22 (Oakland'22).</li>
-            <li><span class="badge badge-secondary">Feb 2022</span> Hirak Ray, Ravi Kuber, and Adam J. Aviv have a new paper accepted at the Web for All Conference '22</li>
+            <li><span class="badge bg-secondary">Apr 2022</span> Collins W. Munyendo, Yasemin Acar, and Adam J. Aviv have a new paper accepted at IEEE S&P'22 (Oakland'22).</li>
+            <li><span class="badge bg-secondary">Apr 2022</span> Jan Jancar, Marcel Fourné, Daniel De Almeida Braga, Mohamed Sabt, Peter Schwabe, Gilles Barthe, Pierre-Alain Fouque, and Yasemin Acar have a new paper accepted at IEEE S&P'22 (Oakland'22).</li>
+            <li><span class="badge bg-secondary">Apr 2022</span> Dominik Wermke, Noah Wöhler, Jan H. Klemmer, Marcel Fourné, Yasemin Acar and Sascha Fahl have a new paper accepted at IEEE S&P'22 (Oakland'22).</li>
+            <li><span class="badge bg-secondary">Feb 2022</span> Hirak Ray, Ravi Kuber, and Adam J. Aviv have a new paper accepted at the Web for All Conference '22</li>
 
-            <li><span class="badge badge-secondary">Feb 2022</span> Collins W. Munyendo, Philipp Markert, Alexandra Nisenoff, Miles Grant, Elena Korkes, Blase Ur, and Adam J. Aviv have a new paper accepted at USENIX Sec'22</li>
-            <li><span class="badge badge-secondary">Feb 2022</span>Harjot Kaur, Sabrina Amft, Daniel Votipka, Yasemin Acar and Sascha Fahl have a new paper accepted at USENIX Sec'22</li>
+            <li><span class="badge bg-secondary">Feb 2022</span> Collins W. Munyendo, Philipp Markert, Alexandra Nisenoff, Miles Grant, Elena Korkes, Blase Ur, and Adam J. Aviv have a new paper accepted at USENIX Sec'22</li>
+            <li><span class="badge bg-secondary">Feb 2022</span>Harjot Kaur, Sabrina Amft, Daniel Votipka, Yasemin Acar and Sascha Fahl have a new paper accepted at USENIX Sec'22</li>
             <li> <a href='javascript:void(0)' onclick="$('.2021-news').toggle('slow')">2021 News</a>  (click to reveal)</li>
             <div class="2021-news"  style="display:none;">
               <ul>
-            <li><span class="badge badge-secondary">Dec 2021</span> Jaron Mink, Amanda Rose Yuile, Uma Pal, Adam J. Aviv and Adam Bates have a new paper accepted at CHI'22</li>
-            <li><span class="badge badge-secondary">Nov 2021</span> Jan Jancar, Marcel Fourne, Daniel De Almeida Braga, Mohamed Sabt, Peter Schwabe, Gilles Barth, Pierre-Alain Fouque, Yasemin Acar have a new paper accepted at S&P'22 (Oakland'22)</li>
-            <li><span class="badge badge-secondary">Oct 2021</span> Philipp Markert, Daniel V. Bailey, Maximilian Golla, Markus Dürmuth, and Adam J. Aviv have a new journal article appearing at ACM TOPS </li>
-            <li><span class="badge badge-secondary">Sep 2021</span> David G. Balash, Xiaoyuan Wu, Miles Grant, Irwin Reyes, and Adam J. Aviv have a new paper at USENIX Security'22</li>
-            <li><span class="badge badge-secondary">Aug 2021</span> Christian Stransky, Oliver Wiese, Volker Roth, Yasemin Acar, and Sascha Fahl have a new paper accepted at S&P'22 (Oakland'22)</li>
-            <li><span class="badge badge-secondary">July 2021</span> Marco Gutfleisch, Jan Klemmer, Niklas Busch, Yasemin Acar, Angela Sasse, and Sascha Fahl have a new paper accepted at S&P'22 (Oakland'22)</li>
+            <li><span class="badge bg-secondary">Dec 2021</span> Jaron Mink, Amanda Rose Yuile, Uma Pal, Adam J. Aviv and Adam Bates have a new paper accepted at CHI'22</li>
+            <li><span class="badge bg-secondary">Nov 2021</span> Jan Jancar, Marcel Fourne, Daniel De Almeida Braga, Mohamed Sabt, Peter Schwabe, Gilles Barth, Pierre-Alain Fouque, Yasemin Acar have a new paper accepted at S&P'22 (Oakland'22)</li>
+            <li><span class="badge bg-secondary">Oct 2021</span> Philipp Markert, Daniel V. Bailey, Maximilian Golla, Markus Dürmuth, and Adam J. Aviv have a new journal article appearing at ACM TOPS </li>
+            <li><span class="badge bg-secondary">Sep 2021</span> David G. Balash, Xiaoyuan Wu, Miles Grant, Irwin Reyes, and Adam J. Aviv have a new paper at USENIX Security'22</li>
+            <li><span class="badge bg-secondary">Aug 2021</span> Christian Stransky, Oliver Wiese, Volker Roth, Yasemin Acar, and Sascha Fahl have a new paper accepted at S&P'22 (Oakland'22)</li>
+            <li><span class="badge bg-secondary">July 2021</span> Marco Gutfleisch, Jan Klemmer, Niklas Busch, Yasemin Acar, Angela Sasse, and Sascha Fahl have a new paper accepted at S&P'22 (Oakland'22)</li>
 
-            <li><span class="badge badge-secondary">June 2021</span> Collins Munyendo, Miles Grant, Philipp Markert, Timothy J. Forman, and Adam J. Aviv have a new paper at SOUPS'21</li>
-            <li><span class="badge badge-secondary">June 2021</span> David G. Balash, Dongkun Kim, Darika Shaibekova, Rahel A. Fainchtein, Micah Sherr, and Adam J. Aviv have a new paper at SOUPS'21</li>
-            <li><span class="badge badge-secondary">June 2021</span> Danil V. Baily, Philipp Markert, and Adam J. Aviv have a new paper at SOUPS'21</li>
+            <li><span class="badge bg-secondary">June 2021</span> Collins Munyendo, Miles Grant, Philipp Markert, Timothy J. Forman, and Adam J. Aviv have a new paper at SOUPS'21</li>
+            <li><span class="badge bg-secondary">June 2021</span> David G. Balash, Dongkun Kim, Darika Shaibekova, Rahel A. Fainchtein, Micah Sherr, and Adam J. Aviv have a new paper at SOUPS'21</li>
+            <li><span class="badge bg-secondary">June 2021</span> Danil V. Baily, Philipp Markert, and Adam J. Aviv have a new paper at SOUPS'21</li>
 
-            <li><span class="badge badge-secondary">June 2021</span> Noel Warford, Collins Munyendo, Ashna Mediratta, Adam J. Aviv, and Michelle L. Mazurek have a new paper accepted at USENIX Sec'21 </li>
-            <li><span class="badge badge-secondary">June 2021</span> Flynn Wolf, Ravi Kuber, and Adam J. Aviv have a new paper accepted at USENIX Sec'21 </li>
-            <li><span class="badge badge-secondary">June 2021</span> Florian Farke, David Balash, Maximilian Golla, Markus, Markus Dürmuth, and Adam J. Aviv have a new paper accepted at USENIX Sec'21 </li>
-            <li><span class="badge badge-secondary">Apr 2021</span> Peter Mayer, Yixin Zou, Florian Schaub, and Adam J. Aviv have a new paper accepted at USENIX Sec'21 </li>
-            <li><span class="badge badge-secondary">Feb 2021</span> Ian Martiny, Gabriel Kaptchuk, Adam J. Aviv, Daniel S. Roche, and Eric Wustrow have a new paper accepted at NDSS'21 </li>
+            <li><span class="badge bg-secondary">June 2021</span> Noel Warford, Collins Munyendo, Ashna Mediratta, Adam J. Aviv, and Michelle L. Mazurek have a new paper accepted at USENIX Sec'21 </li>
+            <li><span class="badge bg-secondary">June 2021</span> Flynn Wolf, Ravi Kuber, and Adam J. Aviv have a new paper accepted at USENIX Sec'21 </li>
+            <li><span class="badge bg-secondary">June 2021</span> Florian Farke, David Balash, Maximilian Golla, Markus, Markus Dürmuth, and Adam J. Aviv have a new paper accepted at USENIX Sec'21 </li>
+            <li><span class="badge bg-secondary">Apr 2021</span> Peter Mayer, Yixin Zou, Florian Schaub, and Adam J. Aviv have a new paper accepted at USENIX Sec'21 </li>
+            <li><span class="badge bg-secondary">Feb 2021</span> Ian Martiny, Gabriel Kaptchuk, Adam J. Aviv, Daniel S. Roche, and Eric Wustrow have a new paper accepted at NDSS'21 </li>
               </ul>
             </div>
             <li> <a href='javascript:void(0)' onclick="$('.2020-news').toggle('slow')">2020 News</a>  (click to reveal)</li>
             <div class="2020-news"  style="display:none;">
               <ul>
-            <li><span class="badge badge-secondary">Nov 2020</span> GWUSEC lab open house scheduled for Nov. 11, 2020 from 11:00am-12:30pm (EST). All are welcome. Register <a href="https://docs.google.com/forms/d/e/1FAIpQLScDpWNzjybJ1eV58owdMn-EA1LUHQbVRqaNKpMF6jex5FkmPw/viewform?usp=sf_link">here</a>. </li>
-            <li><span class="badge badge-secondary">Nov 2020</span> Hirak Ray, Flynn Wolf, Ravi Kuber and Adam J. Aviv have a new paper accepted at PoPETS'21 on privacy perceptions in older adults</li>
-            <li><span class="badge badge-secondary">Nov 2020</span> Rahel A. Fainchtein, Adam J. Aviv, Micah Sherr, Stephen Ribaudo, and Armaan Khullar have a new paper accepted at PoPETS'21 on Smart DNS</li>            
-            <li><span class="badge badge-secondary">Oct 2020</span> Hirak Ray, Flynn Wolf, Ravi Kuber and Adam J. Aviv have a new paper accepted at USENIX Sec'21 on password manager usage among older adult</li>
-            <li><span class="badge badge-secondary">Aug 2020</span> Timothy J. Forman and Adam J. Aviv have a new paper accepted at ACSAC'20 on Double Patterns</li>
-            <li><span class="badge badge-secondary">Aug 2020</span> Hassan Khan, Jason Ceci, Jonah Stegman, Adam J. Aviv, Rozita Dara, Ravi Kuber have a new paper accepted at ACSAC'20 on PIN usage</li>
+            <li><span class="badge bg-secondary">Nov 2020</span> GWUSEC lab open house scheduled for Nov. 11, 2020 from 11:00am-12:30pm (EST). All are welcome. Register <a href="https://docs.google.com/forms/d/e/1FAIpQLScDpWNzjybJ1eV58owdMn-EA1LUHQbVRqaNKpMF6jex5FkmPw/viewform?usp=sf_link">here</a>. </li>
+            <li><span class="badge bg-secondary">Nov 2020</span> Hirak Ray, Flynn Wolf, Ravi Kuber and Adam J. Aviv have a new paper accepted at PoPETS'21 on privacy perceptions in older adults</li>
+            <li><span class="badge bg-secondary">Nov 2020</span> Rahel A. Fainchtein, Adam J. Aviv, Micah Sherr, Stephen Ribaudo, and Armaan Khullar have a new paper accepted at PoPETS'21 on Smart DNS</li>            
+            <li><span class="badge bg-secondary">Oct 2020</span> Hirak Ray, Flynn Wolf, Ravi Kuber and Adam J. Aviv have a new paper accepted at USENIX Sec'21 on password manager usage among older adult</li>
+            <li><span class="badge bg-secondary">Aug 2020</span> Timothy J. Forman and Adam J. Aviv have a new paper accepted at ACSAC'20 on Double Patterns</li>
+            <li><span class="badge bg-secondary">Aug 2020</span> Hassan Khan, Jason Ceci, Jonah Stegman, Adam J. Aviv, Rozita Dara, Ravi Kuber have a new paper accepted at ACSAC'20 on PIN usage</li>
 
-            <li><span class="badge badge-secondary">June 2020</span> Raina Samuel, Philipp Markert, Adam J. Aviv, and Iulian Neamtiu have a new paper accepted at SOUPS'20 on the security and usability of Knock Codes. Read the <a href="https://arxiv.org/abs/2006.03556">arxiv (preprint)</a>.</li>
+            <li><span class="badge bg-secondary">June 2020</span> Raina Samuel, Philipp Markert, Adam J. Aviv, and Iulian Neamtiu have a new paper accepted at SOUPS'20 on the security and usability of Knock Codes. Read the <a href="https://arxiv.org/abs/2006.03556">arxiv (preprint)</a>.</li>
 
-            <li><span class="badge badge-secondary">June 2020</span> Yasmine Acar will be joining the CS department as an Assistant Professor and Co-lab director of GWUSEC lab starting January 2021. Welcome aboard!</li>
+            <li><span class="badge bg-secondary">June 2020</span> Yasmine Acar will be joining the CS department as an Assistant Professor and Co-lab director of GWUSEC lab starting January 2021. Welcome aboard!</li>
             
-            <li><span class="badge badge-secondary">May 2020</span> Philipp Markert is presenting our research at IEEE S&P (Oakland) on May 18th.</li>
-            <li><span class="badge badge-secondary">May 2020</span> We've got a Twitter account <a href="https://twitter.com/gwusec">@gwusec</a>. Follow us for updates!</li>
-            <li><span class="badge badge-secondary">May 2020</span> David Balash, Nelson Jaimes, and Collins Munyendo. Welcome aboard!</li>
-            <li><span class="badge badge-secondary">May 2020</span> The lab website goes live!</li>
+            <li><span class="badge bg-secondary">May 2020</span> Philipp Markert is presenting our research at IEEE S&P (Oakland) on May 18th.</li>
+            <li><span class="badge bg-secondary">May 2020</span> We've got a Twitter account <a href="https://twitter.com/gwusec">@gwusec</a>. Follow us for updates!</li>
+            <li><span class="badge bg-secondary">May 2020</span> David Balash, Nelson Jaimes, and Collins Munyendo. Welcome aboard!</li>
+            <li><span class="badge bg-secondary">May 2020</span> The lab website goes live!</li>
               </ul>
             </div>
           </ul>
