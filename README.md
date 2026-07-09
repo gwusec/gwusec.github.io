@@ -1,7 +1,7 @@
 # GWU/USEC Lab website
 
 Source for <https://gwusec.seas.gwu.edu>. Built with [Jekyll](https://jekyllrb.com/) and published
-automatically by GitHub Actions on every push to `master`.
+automatically by GitHub Actions on every push to `main`.
 
 **You should not need to write any HTML to update this site.** The content lives in YAML and
 Markdown files; the HTML is generated. This README covers the things people actually change.
@@ -121,7 +121,7 @@ rebuild automatically — just refresh. **Edits to `_config.yml` require restart
 
 ## How it deploys
 
-Push to `master`. The [Pages workflow](.github/workflows/pages.yml) builds the site and publishes it;
+Push to `main`. The [Pages workflow](.github/workflows/pages.yml) builds the site and publishes it;
 there is no `_site/` directory in the repo and nothing to commit by hand.
 
 Watch the run under the repo's **Actions** tab. If it's red, click into the failed step — it's
@@ -130,9 +130,9 @@ and a value containing a `:` must be quoted. Running `bundle exec jekyll build` 
 the same error faster than pushing again.
 
 > [!NOTE]
-> The repo's **Settings → Pages → Source** must be set to **GitHub Actions**. If it's ever switched
-> back to "Deploy from a branch", the workflow will keep going green while the live site silently
-> serves something else.
+> The repo's **Settings → Pages → Source** is set to **GitHub Actions**, and needs to stay that way.
+> If it's ever switched to "Deploy from a branch", this workflow will keep going green while the
+> live site silently serves something else.
 
 ## Repo map
 
