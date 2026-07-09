@@ -1,0 +1,29 @@
+<div class="container carousel-wrap">
+  <div id="labCarousel" class="carousel slide">
+    <div class="carousel-indicators">
+      {%- for slide in site.data.carousel %}
+      <button type="button" data-bs-target="#labCarousel" data-bs-slide-to="{{ forloop.index0 }}"
+        {% if forloop.first %}class="active" aria-current="true" {% endif %}
+        aria-label="Slide {{ forloop.index }}"></button>
+      {%- endfor %}
+    </div>
+
+    <div class="carousel-inner">
+      {%- for slide in site.data.carousel %}
+      <div class="carousel-item{% if forloop.first %} active{% endif %}">
+        <img src="{{ slide.image | relative_url }}" class="d-block w-100" alt="{{ slide.alt }}"
+          {% unless forloop.first %}loading="lazy" {% endunless %}>
+      </div>
+      {%- endfor %}
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#labCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#labCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>

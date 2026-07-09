@@ -1,0 +1,17 @@
+<div class="container external-lab">
+  <h3>Current and Former External Lab Collaborations</h3>
+  <ul>
+    {%- for person in site.data.people.collaborators %}
+    <li>{{ person.name }}{% if person.affiliation %} ({{ person.affiliation }}){% endif %}</li>
+    {%- endfor %}
+  </ul>
+</div>
+
+<div class="container former-lab">
+  <h3>Alumn/Past Members</h3>
+  <ul>
+    {%- for person in site.data.people.alumni %}
+    <li>{{ person.name }}{% if person.degree %} ({{ person.degree }}){% endif %}{% if person.note %} <em>({{ person.note }})</em>{% endif %}</li>
+    {%- endfor %}
+  </ul>
+</div>

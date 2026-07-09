@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 mt-2 mb-4">
+    {%- for person in site.data.people.current %}
+    <div class="col text-center">
+      <img src="{{ '/imgs/people/' | append: person.photo | relative_url }}" alt="{{ person.name }}"
+        class="img-thumbnail person-photo" loading="lazy">
+      <br>
+      {% if person.url -%}
+      <a href="{{ person.url }}">{{ person.name }}</a>
+      {%- else -%}
+      {{ person.name }}
+      {%- endif %}
+      <br>
+      {{ person.title }}
+      {%- if person.note %}
+      <br>
+      <em>{{ person.note }}</em>
+      {%- endif %}
+    </div>
+    {%- endfor %}
+  </div>
+</div>

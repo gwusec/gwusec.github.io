@@ -1,1 +1,22 @@
+title: GWU/USEC Lab
+tagline: GWUSEC
+description: >-
+  The George Washington University Usable Security and Privacy Lab (GWUSEC)
+  studies computer security and privacy with a human-centered approach.
+url: https://gwusec.seas.gwu.edu
+baseurl: ""
 
+logo: /imgs/icon.png
+banner: /imgs/banner.png
+
+# Prose sections of the single-page site. output: false keeps them from getting
+# their own URLs -- index.html renders their bodies inline instead.
+collections:
+  sections:
+    output: false
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor

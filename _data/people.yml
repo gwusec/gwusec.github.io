@@ -1,0 +1,153 @@
+# Everyone shown in the People section. See README.md for how to add someone.
+#
+#   name          required
+#   photo         current members only; a filename inside imgs/people/
+#   url           optional personal site; omit and the name renders as plain text
+#   title         current members only, e.g. "PhD Student"
+#   note          optional; rendered in italics under the name / after the list entry
+#   affiliation   collaborators only; rendered in parentheses
+#   degree        alumni only, e.g. "UG", "MS", "PhD"
+
+current:
+  - name: Adam J. Aviv
+    photo: 001_adam.jpg
+    url: https://adamaviv.com
+    title: Associate Professor
+    note: Lab Director
+
+  - name: Matthias Fassl
+    photo: 034_matthias.jpeg
+    url: https://n0g.at/
+    title: Postdoctoral Scholar
+
+  - name: Smirity Kaushik
+    photo: 029_smirity.jpg
+    url: https://smiritykaushik.github.io/
+    title: Postdoctoral Scholar
+
+  - name: Shiza Ali
+    photo: 033_shiza.png
+    url: https://shizaali.com/
+    title: Postdoctoral Scholar
+    note: Co-Mentored with Rebecca Hwa
+
+  - name: Adryana Hutchinson
+    photo: 023_adryana.jpg
+    url: https://a-wyrm.github.io/
+    title: PhD Student
+
+  - name: Monica Kodwani
+    photo: 024_monica.jpg
+    title: PhD Student
+
+  - name: Wellington Esposito Barbosa
+    photo: 027_wellington.jpg
+    title: PhD Student
+
+  - name: Arwa Alshadi
+    photo: 028_arwa.jpg
+    title: PhD Student
+
+  - name: Junho Eum
+    photo: 026_junho.jpg
+    title: PhD Student
+
+  - name: Jialiang Yan
+    photo: 030_jialiang.jpg
+    url: https://jialiangyan.vercel.app/
+    title: PhD Student
+
+  - name: Rafael Martinez
+    photo: 031_rafael.jpg
+    title: PhD Student
+
+  - name: Neal Keating
+    photo: 022_keating.jpg
+    title: PhD Student
+
+collaborators:
+  - name: Michelle Mazurek
+    affiliation: UMD
+  - name: Irwin Reyes
+  - name: Maximilian Golla
+    affiliation: CISPA
+  - name: Philipp Markert
+    affiliation: RUB
+  - name: Florian Farke
+    affiliation: RUB
+  - name: Peter Mayer
+    affiliation: Uni. Southern Denmark
+  - name: Dominik Wermke
+    affiliation: University of Hannover
+  - name: Mindy Tran
+    affiliation: MPI-SP
+  - name: Harshinin Sriram
+    affiliation: Paderborn
+  - name: Masood Ali
+    affiliation: UIC
+  - name: Yasmin Acar
+    affiliation: Paderborn
+
+alumni:
+  - name: Don Kim
+    degree: UG
+  - name: Tim Forman
+    degree: USNA/UG
+  - name: James Levy
+    degree: MS
+  - name: Darika Shaibekova
+    degree: UG/MS
+  - name: Xiaoyuan (Owen) Wu
+    degree: UG
+    note: Now a PhD student at CMU
+  - name: Hunter Dyer
+    note: Now at Microsoft
+  - name: Jinsuk Lee
+    degree: MS
+  - name: Kayla Berne
+    degree: UG
+  - name: Marlee Alvino
+    degree: UG
+  - name: David Balash
+    degree: PhD
+  - name: Ruining Yang
+    degree: MS
+    note: Now a PhD student at SUNY Stony Brook
+  - name: Miles Grant
+    degree: UG
+  - name: Eddie Cosak
+    degree: UG
+  - name: Daniel Fisher
+    degree: UG
+  - name: Victoria Hennemann
+    degree: UG
+  - name: Evan Fries
+    degree: UG
+  - name: Alvin Isaacs
+    degree: UG
+  - name: Leo Phan
+    degree: UG
+  - name: Viraj Prakash
+    degree: UG
+  - name: Tanim Khan
+    degree: UG
+  - name: Elena Korkes
+    degree: UG/MS
+  - name: Lucy Simko
+    degree: PostDoc
+    note: Now an assistant professor at Barnard College
+  - name: Ilinca Hirtopanu
+    degree: UG
+  - name: Faris Jiwad
+    degree: UG
+  - name: Rachel Gonzalez Rodriguez
+    degree: MS
+  - name: Cole Knie
+    degree: UH/MS
+  - name: Elaine Ly
+    note: Now a PhD student at Northeastern
+  - name: Jan Tolsdorf
+    degree: Postdoc
+    note: Now a postdoc at MPI-SP
+  - name: Collins Munyendo
+    note: Now a postdoc at UC Berkeley, and soon to be faculty at National University of Singapore

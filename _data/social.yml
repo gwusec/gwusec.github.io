@@ -1,0 +1,22 @@
+# Social links shown under the banner, in order.
+# `rel: me` is what lets Mastodon verify the link back to this site -- keep it.
+links:
+  - name: Twitter
+    label: "@gwusec"
+    url: https://twitter.com/gwusec
+    icon: /imgs/icons/twitter.svg
+
+  - name: Mastodon
+    label: "@gwusec@infosec.exchange"
+    url: https://infosec.exchange/@gwusec
+    icon: /imgs/icons/masto.svg
+    rel: me
+
+  - name: GitHub
+    label: github.com/gwusec
+    url: https://github.com/gwusec
+    icon: /imgs/icons/github.svg
+
+location:
+  room: SEH 4390
+  directions: Bubble Lab through SEH4100 doors

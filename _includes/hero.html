@@ -1,0 +1,22 @@
+<a id="home"></a>
+<div class="container starter">
+  <img src="{{ site.banner | relative_url }}" alt="{{ site.title }} banner" class="img-fluid" style="max-width:80%">
+
+  <div class="row mt-3">
+    {%- for link in site.data.social.links %}
+    <div class="col-sm">
+      <a {% if link.rel %}rel="{{ link.rel }}" {% endif %}href="{{ link.url }}">
+        <img src="{{ link.icon | relative_url }}" alt="{{ link.name }} icon" width="24" height="24"><br>
+        {{ link.label }}
+      </a>
+    </div>
+    {%- endfor %}
+  </div>
+
+  <div class="row mt-3">
+    <div class="col-sm">
+      <img src="{{ '/imgs/icons/home.svg' | relative_url }}" alt="House icon" width="24" height="24"><br>
+      {{ site.data.social.location.room }} <br> ({{ site.data.social.location.directions }})
+    </div>
+  </div>
+</div>

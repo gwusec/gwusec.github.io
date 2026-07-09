@@ -1,0 +1,16 @@
+# Homepage photo carousel. First entry is the slide shown on load.
+# Indicators and arrows are generated from this list -- just add or remove entries.
+- image: /imgs/GWUSEC_lab_photo_2025.jpg
+  alt: GWUSEC Lab Photo 2025
+
+- image: /imgs/GWUSEC_CCS_group_2023.jpg
+  alt: GWUSEC Lab Group Photo at CCS 2023
+
+- image: /imgs/GWUSEC_SOUPS_2025.jpg
+  alt: GWUSEC Lab Members at SOUPS, August 2025
+
+- image: /imgs/GWUSEC_cityview.jpg
+  alt: GWUSEC Lab Members at the City View Room
+
+- image: /imgs/GWUSEC_USENIX_collins_pres_2022.jpg
+  alt: Collins Munyendo presenting at USENIX Security, August 2022

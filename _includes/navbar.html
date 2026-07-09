@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-navbar fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#home">
+      <img src="{{ site.logo | relative_url }}" alt="{{ site.title }} logo" width="35" class="align-center me-2">
+      {{ site.title }}
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        {%- assign nav_sections = site.sections | where: "nav", true | sort: "order" -%}
+        {%- for section in nav_sections %}
+        <li class="nav-item">
+          <a class="nav-link" href="#{{ section.anchor }}">{{ section.nav_title | default: section.title }}</a>
+        </li>
+        {%- endfor %}
+      </ul>
+    </div>
+  </div>
+</nav>

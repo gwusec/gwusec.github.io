@@ -1,2 +1,8 @@
 *~
 .DS_Store
+_site/
+.jekyll-cache/
+.jekyll-metadata
+# Resolved separately on dev machines and on the CI runner, which pin
+# different Ruby versions. See README.md.
+Gemfile.lock
