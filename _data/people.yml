@@ -2,6 +2,7 @@
 #
 #   name          required
 #   photo         current members only; a filename inside imgs/people/
+#                 omit it and 000_placeholder.jpg is used
 #   url           optional personal site; omit and the name renders as plain text
 #   title         current members only, e.g. "PhD Student"
 #   note          optional; rendered in italics under the name / after the list entry
@@ -64,6 +65,18 @@ current:
   - name: Neal Keating
     photo: 022_keating.jpg
     title: PhD Student
+
+  - name: Esther Tan
+    title: MS Thesis Student
+  
+  - name: Lina Rashdan
+    title: MS Thesis Student
+
+  - name: Eliana Lang
+    title: MS Thesis Student
+
+  - name: James (Shantao) Xu
+    title: MS Thesis Student
 
 collaborators:
   - name: Michelle Mazurek

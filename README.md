@@ -14,12 +14,14 @@ Markdown files; the HTML is generated. This README covers the things people actu
 
 1. Drop a square-ish photo in `imgs/people/`. Name it `NNN_firstname.jpg`, where `NNN` is the next
    number in sequence — the prefix only exists to keep the folder sorted, nothing reads it. Roughly
-   400×400 is plenty; it gets displayed at 200×200 and center-cropped.
+   400×400 is plenty; it gets displayed at 200×200 and center-cropped. If you don't have a photo
+   yet, skip this step and leave `photo:` out — the generic `000_placeholder.jpg` is used until you
+   add one.
 2. Add an entry to the `current:` list in [`_data/people.yml`](_data/people.yml):
 
    ```yaml
    - name: Ada Lovelace
-     photo: 035_ada.jpg
+     photo: 035_ada.jpg           # optional; omit for the placeholder photo
      url: https://example.com     # optional; omit for no link
      title: PhD Student
      note: Co-Mentored with Someone Else   # optional; shown in italics
