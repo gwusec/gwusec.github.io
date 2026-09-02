@@ -1,5 +1,8 @@
 # Homepage photo carousel. First entry is the slide shown on load.
 # Indicators and arrows are generated from this list -- just add or remove entries.
+- image: /imgs/GWUSEC_USENIX_2026.jpg
+  alt: GWUSEC Lab Members at USENIX Security, August 2026
+
 - image: /imgs/GWUSEC_lab_photo_2025.jpg
   alt: GWUSEC Lab Photo 2025
 
